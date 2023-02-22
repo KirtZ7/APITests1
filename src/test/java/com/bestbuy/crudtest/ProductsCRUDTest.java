@@ -41,11 +41,11 @@ public class ProductsCRUDTest extends TestBaseProducts {
         productPojo.setUrl("https://www.bestbuy.com/site/trust-no-one-lp-vinyl/35474875.p?skuId=35474875");
         productPojo.setImage("https://bigthink.com/wp-content/uploads/2022/08/AdobeStock_81049143.jpeg");
 
-        List<String> categories = new ArrayList<>();
-        categories.add("Kirtan524136");
-        categories.add("Nuclear Batteries");
-        categories.add("2023-02-22 05:53 zzz");
-        categories.add("2023-02-22 05:55 zzz");
+//        List<String> categories = new ArrayList<>();
+//        categories.add("Kirtan524136");
+//        categories.add("Nuclear Batteries");
+//        categories.add("2023-02-22 05:53 zzz");
+//        categories.add("2023-02-22 05:55 zzz");
 
         Response response = given()
                 .header("Content-Type", "application/json")
@@ -85,11 +85,11 @@ public class ProductsCRUDTest extends TestBaseProducts {
 
     @Test //put test
     public void cPutDataTest(){
-        List<String> categories = new ArrayList<>();
-        categories.add("Kirtqdasdawewqeqwan524136");
-        categories.add("Nuclasdasear Batteqewqeries");
-        categories.add("2023-02-22 05:53 zzz");
-        categories.add("2023-02-22 05:55 zzz");
+//        List<String> categories = new ArrayList<>();
+//        categories.add("Kirtqdasdawewqeqwan524136");
+//        categories.add("Nuclasdasear Batteqewqeries");
+//        categories.add("2023-02-22 05:53 zzz");
+//        categories.add("2023-02-22 05:55 zzz");
 
         ProductPojo productPojo = new ProductPojo();
         productPojo.setName("Nucleaasdaqweqwer Bombs");
