@@ -71,18 +71,6 @@ public class ProductsCRUDTest extends TestBaseProducts {
     }
 
 
-
-    @Test //retrieve id and validate
-    public void dRetrieveIdAndValidate() {
-        Response response = given()
-                .pathParams("id","127687")
-                .when()
-                .get("/{id}");
-        response.then().statusCode(200);
-        response.prettyPrint();
-
-    }
-
     @Test //put test
     public void cPutDataTest(){
 //        List<String> categories = new ArrayList<>();
@@ -119,6 +107,19 @@ public class ProductsCRUDTest extends TestBaseProducts {
                 .when()
                 .delete("/{id}");
         response.then().log().all().statusCode(404);
+        response.prettyPrint();
+
+    }
+
+
+
+    @Test //retrieve id and validate
+    public void dRetrieveIdAndValidate() {
+        Response response = given()
+                .pathParams("id","127687")
+                .when()
+                .get("/{id}");
+        response.then().statusCode(404);
         response.prettyPrint();
 
     }
